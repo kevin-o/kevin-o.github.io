@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>World Bank Data Viewer</title>
+  <meta charset="utf-8">
+  <meta name="description" content="World Bank Data Viewer">
+  <meta name="author" content="Kevin OLaughlin">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="assets/img/wblogo.jpg">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>World Bank Data Viewer</h1>
+    <h2>An App for Mapping World Bank Health and Economic Indicators</h2>
+    <p>Kevin OLaughlin<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>World Bank Data Viewer Application</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The World Bank publishes lots of healthcare and population time series data, by country, by year that offer a rich dataset for determining how countries compare and how countries improve on key health and population indicators.  My application provides a flexible tool for viewing geographic maps of user selectable health and economic indicators for the years 1970 - 2014.</p>
+
+<p><img src="assets/fig/screenshot-1.png" alt="plot of chunk screenshot"> </p>
+
+<p><img src="assets/img/app_image.png" alt="alt text"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Data Series Available</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>There are a total of 155 time series available for browsing through my application.  Here is a small sample of the entire set available:</p>
+
+<table><thead>
+<tr>
+<th align="left">timeSeriesNames[1:11]</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left">Number of infant deaths</td>
+</tr>
+<tr>
+<td align="left">Number of under-five deaths</td>
+</tr>
+<tr>
+<td align="left">Mortality rate, under-5 (per 1,000 live births)</td>
+</tr>
+<tr>
+<td align="left">Adolescent fertility rate (births per 1,000 women ages 15-19)</td>
+</tr>
+<tr>
+<td align="left">Mortality rate, infant (per 1,000 live births)</td>
+</tr>
+<tr>
+<td align="left">Population ages 0-14 (% of total)</td>
+</tr>
+<tr>
+<td align="left">Population ages 15-64 (% of total)</td>
+</tr>
+<tr>
+<td align="left">Population ages 65 and above (% of total)</td>
+</tr>
+<tr>
+<td align="left">Age dependency ratio (% of working-age population)</td>
+</tr>
+<tr>
+<td align="left">Age dependency ratio, old (% of working-age population)</td>
+</tr>
+<tr>
+<td align="left">Age dependency ratio, young (% of working-age population)</td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>How to Use</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>On the left hand side of the application is an input panel with several selectable fields.  </p>
+
+<p><img src="assets/fig/controls-1.png" alt="plot of chunk controls"> </p>
+
+<p>To get started: </p>
+
+<ol>
+<li> Select Time Series through the drop down selection list</li>
+<li> Use the slider bar to select the year
+You can also press the &quot;play&quot; button under the year slider to set the map in motion!</li>
+</ol>
+
+<p><strong>Just keep trying different combinations of indicators and years to see the data in the database!</strong></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>How to Use (cont&#39;d)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The left side panel also includes a histogram of the country data for the selected time series and year.   </p>
+
+<p><img src="assets/fig/histo-1.png" alt="plot of chunk histo"> </p>
+
+<p>The histogram can also be customized in terms of size of boxes, whether a density function should be fit and displayed, together with a user specified smoothing factor.</p>
+
+<p><em>Please try my app and I hope you enjoy it!</em></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='World Bank Data Viewer Application'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Data Series Available'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How to Use'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='How to Use (cont&#39;d)'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
